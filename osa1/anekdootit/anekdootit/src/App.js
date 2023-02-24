@@ -6,11 +6,12 @@ const Button = ({ text,clickAction }) => {
   )
   }
 
-const Paragraph = ({text}) => {
-  return(
-    <p>{text}</p>
-  )
-}
+  const Paragraph = ({text}) => {
+    return(
+      <p>{text}</p>
+    )
+  }
+
 const App = () => {
 
   const anecdotes = [
@@ -41,16 +42,16 @@ const App = () => {
   const maxanekdootti = anecdotes[vote.indexOf(maksimiaani)]
 
   return (
-      <div>
-      <h2>Anecdote of the day </h2>
-      <Paragraph text={anecdotes[selected]} />
-      <p>has {vote[selected]} votes</p>
-      <Button text={"next anekdootti"} clickAction={getnextAnecdote} />
-      <Button text={"vote"} clickAction={updateVotes} />
-      <h2> Anecdote with the most votes</h2>
-      <Paragraph text={maxanekdootti} />
-      <p>has {maksimiaani} votes</p>
-      </div>
+    <div>
+    <h2>Anecdote of the day </h2>
+    <Paragraph text={anecdotes[selected]} />
+    <p>has {vote[selected]} votes</p>
+    <Button text={"next anekdootti"} clickAction={getnextAnecdote} />
+    <Button text={"vote"} clickAction={updateVotes} />
+    <h2> Anecdote with the most votes</h2>
+    <Paragraph text={maxanekdootti} />
+    <p>has {maksimiaani} votes</p>
+    </div>
   );
 }
 
