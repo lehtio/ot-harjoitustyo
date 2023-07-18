@@ -1,0 +1,20 @@
+{
+  "persons": [
+    {
+      "name": "Ada Lovelace",
+      "number": "39-44-5323523",
+      "important": true,
+      "id": 2
+    },
+    {
+      "name": "testi tyyppi",
+      "number": "3857857839",
+      "id": 6
+    },
+    {
+      "name": "Dan Abramov ",
+      "number": "395968",
+      "id": 10
+    }
+  ]
+}
